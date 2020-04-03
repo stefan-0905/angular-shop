@@ -1,0 +1,41 @@
+.footer {
+  padding: 80px 0;
+  margin-top: 80px;
+  background-color: white;
+}
+
+.footer-banner {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.footer-row {
+  font-size: 12px;
+  font-weight: bold;
+}
+.footer-row ul {
+  padding: 0;
+}
+
+.payment-methods {
+  font-size: 14px;
+  font-weight: bold;
+  color: darkorange;
+}
+
+.test:before {
+  font-size: 12px;
+  margin-right: 2px;
+  content: '\B7'
+}
+
+.footer li,
+.footer li a {
+  text-decoration: none;
+  color: #444444;
+}
+
+.footer li:hover,
+.footer li:hover a {
+  color: orange;
+}

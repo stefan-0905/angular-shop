@@ -1,0 +1,20 @@
+<div class="price-ranger">
+  <h6 class="title">Price Filter</h6>
+  <div class="custom-slider">
+    <ng5-slider [(value)]="startValue"
+                [(highValue)]="endValue"
+                [options]="options"
+                (userChange)="onSliderChanged($event)"
+    ></ng5-slider>
+  </div>
+  <div class="mt-3">
+    <label class="custom-form-control">
+      <span>From:</span>
+      <input (change)="updateStartValue($event)" type="text">
+    </label>
+    <label class="custom-form-control">
+      <span class="margin-left-span">To:</span>
+      <input (change)="updateEndValue($event)" type="text">
+    </label>
+  </div>
+</div>

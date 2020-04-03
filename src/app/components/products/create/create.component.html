@@ -1,0 +1,43 @@
+<div class="container bg-white mt-5 p-5">
+  <h2>Create product: </h2>
+  <hr>
+  <form class="form" (ngSubmit)="onSubmit(formElement)" #formElement="ngForm">
+    <div class="row align-items-baseline">
+      <label class="col-md-1 mb-0" for="title">Title: </label>
+      <input class="col-md-4 form-control" type="text" id="title" ngModel name="title">
+    </div>
+    <br>
+    <div class="row align-items-baseline">
+      <label class="col-md-1 mb-0" for="price">Price: </label>
+      <input class="col-md-4 form-control" type="number" id="price" ngModel name="price">
+    </div>
+    <br>
+    <div class="row align-items-baseline">
+      <label class="col-md-1 mb-0" for="image">Image: </label>
+      <input class="col-md-4 form-control-file" type="file" id="image" name="image" (change)="onImageChange($event.target.files)">
+    </div>
+    <br>
+    <div class="row align-items-baseline">
+      <p class="col-md-1 d-inline mb-0">Sizes: </p>
+      <div class="col-md-4 form-control">
+        <label class="mb-0 mr-2" *ngFor="let size of sizes"><input class="mr-1" type="checkbox" ngModel name="{{ size }}" (change)="onChange(size, $event.target.checked)" value="{{ size }}">{{ size }}</label>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-1">
+        <label for="category">Category: </label>
+      </div>
+      <select id="category" class="col-md-4 form-control" ngModel name="category">
+        <option *ngFor="let category of categories" value="{{ category.id }}">{{ category.name }}</option>
+      </select>
+    </div>
+    <br>
+    <div class="row align-items-baseline">
+      <label class="col-md-1 mb-0" for="brand">Brand: </label>
+      <input class="col-md-4 form-control" type="text" id="brand" ngModel name="brand">
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-4">Submit</button>
+  </form>
+</div>

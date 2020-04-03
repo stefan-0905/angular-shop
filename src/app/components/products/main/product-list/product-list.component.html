@@ -1,0 +1,9 @@
+<div class="row">
+  <div class="col-lg-4 col-md-6 col-sm-12" [@productState] *ngFor="let product of products">
+    <app-product [product]="product"></app-product>
+  </div>
+</div>
+
+<div class="text-center products-load" *ngIf="canLoadMore === true" (click)="loadMoreProducts()">
+  <p></p>
+</div>

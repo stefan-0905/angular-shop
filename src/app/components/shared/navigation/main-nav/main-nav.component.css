@@ -1,0 +1,16 @@
+.text-nav {
+  color: #777777;
+}
+
+.right-nav {
+  font-weight: lighter;
+  font-size: 20px;
+}
+
+.text-nav:hover {
+  color: orange;
+}
+
+.active {
+  color: orange;
+}

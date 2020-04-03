@@ -1,0 +1,30 @@
+<div class="product text-center" (mouseover)="onMouseOver()" (mouseout)="onMouseOut()" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+  <div>
+    <div class="product-image">
+      <span class="helper"></span>
+      <img src="{{ product.image }}"  class="img-fluid" alt="{{ product.title }}">
+    </div>
+    <h5 class="product-title">{{ product.title | shorten:15 }}</h5>
+    <p class="product-price">{{ product.price }}$</p>
+  </div>
+  <div class="product-hover" [@hovering]="state">
+    <div class="product-image-thumb">
+      <span class="helper"></span>
+      <img src="{{ product.image }}"  class="img-fluid" alt="{{ product.title }}">
+    </div>
+    <h5 class="product-title">{{ product.title | shorten:30 }}</h5>
+    <p class="product-sizes">sizes: <span>{{ product.sizes.join(' - ') }}</span></p>
+    <div>
+      <div class="d-inline-block circle circle-red"></div>
+      <div class="d-inline-block circle circle-blue"></div>
+      <div class="d-inline-block circle circle-green"></div>
+      <div class="d-inline-block circle circle-yellow"></div>
+    </div>
+    <hr>
+    <div class="product-links">
+      <i class="fa fa-globe" aria-hidden="true"></i>
+      <i class="fa fa-cart-plus" aria-hidden="true"></i>
+      <i class="fa fa-heart-o" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>

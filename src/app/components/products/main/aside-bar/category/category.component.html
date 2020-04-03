@@ -1,0 +1,7 @@
+<div class="category">
+  <h6 class="title">Categories</h6>
+  <a href="" class="category-item"
+     *ngFor="let category of categories"
+     (click)="changeCategory($event, category)"
+  >{{ category.name }}</a>
+</div>

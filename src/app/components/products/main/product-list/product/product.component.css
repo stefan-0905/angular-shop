@@ -1,0 +1,98 @@
+.product {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative
+}
+
+.product-image {
+  height: 200px;
+  margin-bottom: 20px;
+
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.product-image img {
+  vertical-align: middle;
+  max-height: 200px;
+}
+
+.product-title {
+  font-weight: bolder;
+  color: #444444;
+}
+
+.product-title:hover {
+  cursor: pointer;
+}
+
+.product-price {
+  color: darkorange;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.product-image-thumb {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.product-image-thumb img {
+  vertical-align: middle;
+  max-height: 50px;
+}
+.product-sizes {
+  font-size: 14px;
+}
+.product-hover {
+  background: white;
+  padding-top: 40px;
+  width: calc(100% - 40px);
+  height: 100%;
+  top:0;
+  position: absolute;
+}
+
+.circle {
+  margin: 0 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+}
+.circle:hover {
+  width: 15px;
+  height: 15px;
+}
+
+.circle-red {
+  background: red;
+}
+.circle-blue {
+  background: blue;
+}
+.circle-green {
+  background: green;
+}
+.circle-yellow {
+  background: yellow;
+}
+
+.product-links {
+  font-size: 24px;
+  color: #444444;
+}
+.product-links i {
+  margin: 0 5px;
+}
+
+.product-links i:hover {
+  color: orange;
+  cursor: pointer;
+}
+

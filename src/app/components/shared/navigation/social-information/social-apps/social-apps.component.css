@@ -1,0 +1,6 @@
+.social-links a {
+  color: #444444;
+}
+.social-links a:not(:last-child) {
+  margin-right: 20px;
+}

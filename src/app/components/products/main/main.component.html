@@ -1,0 +1,22 @@
+<div class="content">
+  <div class="container">
+    <div class="row">
+      <aside class="col-lg-3 col-md-4 col-sm-12 px-3">
+        <app-category [categories]="categories"
+                      (emitCategoryChange)="categoryChanged($event)"
+        ></app-category>
+        <app-price-ranger (sliderChanged)="onSliderChanged($event)"></app-price-ranger>
+        <app-brand [brands]="brands"
+                   (checkedEmitter)="asideOptionChecked($event)"
+                   (uncheckedEmitter)="asideOptionUnchecked($event)">
+        </app-brand>
+        <app-size [sizes]="sizes"
+                  (checkedEmitter)="asideOptionChecked($event)"
+                  (uncheckedEmitter)="asideOptionUnchecked($event)"></app-size>
+      </aside>
+      <main class="col-lg-9 col-md-8 col-sm-12">
+        <app-product-list [products]="products" [canLoadMore]="canLoadMore" (loadMore)="loadMore()"></app-product-list>
+      </main>
+    </div>
+  </div>
+</div>

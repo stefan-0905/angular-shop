@@ -1,0 +1,7 @@
+<div class="brand">
+  <h6 class="title">Brand</h6>
+  <div *ngFor="let brand of brands" class="brand-form-control">
+    <input type="checkbox" (change)="onChecked($event, brand)" #brandlabel>
+    <label class="ml-2 brand-item" (click)="brandlabel.click()">{{ brand.title }}</label>
+  </div>
+</div>

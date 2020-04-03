@@ -1,0 +1,7 @@
+<div class="size">
+  <h6 class="title">Sizes</h6>
+  <div class="size-form-control" *ngFor="let size of sizes">
+    <input type="checkbox" (change)="onChecked($event, size)" #sizelabel>
+    <label class="ml-2 size-item" (click)="sizelabel.click()">{{ size }}</label>
+  </div>
+</div>

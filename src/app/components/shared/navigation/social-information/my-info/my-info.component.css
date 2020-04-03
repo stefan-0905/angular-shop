@@ -1,0 +1,10 @@
+.personal-info {
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.personal-info i {
+  color: orange;
+  margin-right: 5px;
+}
+

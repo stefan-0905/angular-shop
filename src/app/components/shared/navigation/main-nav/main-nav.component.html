@@ -1,0 +1,17 @@
+<div class="d-flex flex-column flex-md-row align-items-center row">
+  <h5 class="col-md-2 col-sm-12 my-0 text-uppercase font-weight-bold text-center text-md-left ">shopy</h5>
+  <nav class="float-left col-md-8 col-sm-12 text-center text-md-left">
+    <a *ngFor="let navLink of navLinks" routerLink="{{navLink.path}}" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact: true}" class="p-2 px-lg-4 text-nav">{{navLink.name}}</a>
+  </nav>
+  <nav class="ml-md-auto col-md-2 text-center text-md-right">
+    <a class="text-nav right-nav" href="#">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </a>
+    <a class="ml-4 ml-md-2 ml-lg-4 text-nav right-nav" href="#">
+      <i class="fa fa-user" aria-hidden="true"></i>
+    </a>
+    <a class="ml-4 ml-md-2 ml-lg-4 text-nav right-nav" href="#">
+      <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    </a>
+  </nav>
+</div>

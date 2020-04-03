@@ -1,0 +1,82 @@
+.price-ranger {
+  background: #fff;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+.title {
+  color: darkorange;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+.custom-form-control {
+  width: 50%;
+  display: inline;
+  font-size: 12px;
+}
+
+.custom-form-control span {
+  margin-right: 5px;
+  width: calc(20% - 5px);
+  font-weight: bold;
+  color: #444444;
+}
+
+.margin-left-span {
+  width: calc(20% - 10px);
+  margin-left: 5px;
+}
+
+.custom-form-control input{
+  background: #dddddd;
+  border-style: none;
+  padding: 5px;
+  margin: 0;
+  display: inline;
+  width: 30%;
+}
+
+/*
+ We need to use ::ng-deep to overcome view encapsulation
+ */
+::ng-deep .custom-slider .ng5-slider .ng5-slider-bar {
+  background: #ffe4d1;
+  height: 2px;
+}
+::ng-deep .custom-slider .ng5-slider .ng5-slider-selection {
+  background: #444444;
+}
+
+::ng-deep .custom-slider .ng5-slider .ng5-slider-pointer {
+  width: 12px;
+  height: 12px;
+  top: auto; /* to remove the default positioning */
+  bottom: -1px;
+  background-color: #444444;
+}
+
+::ng-deep .custom-slider .ng5-slider .ng5-slider-pointer:after {
+  display: none;
+}
+
+::ng-deep .custom-slider .ng5-slider .ng5-slider-bubble {
+  bottom: 14px;
+}
+
+::ng-deep .custom-slider .ng5-slider .ng5-slider-limit {
+  font-weight: bold;
+  color: orange;
+}
+
+::ng-deep .custom-slider .ng5-slider .ng5-slider-tick {
+  width: 1px;
+  height: 10px;
+  margin-left: 4px;
+  border-radius: 0;
+  background: #ffe4d1;
+  top: -1px;
+}
+
+::ng-deep .custom-slider .ng5-slider .ng5-slider-tick.ng5-slider-selected {
+  background: orange;
+}

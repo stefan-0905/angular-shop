@@ -1,0 +1,20 @@
+.products-load {
+  background: #ffffff;
+  color: darkorange;
+}
+
+.products-load p:after {
+  font-size: 48px;
+  content: '\B7\B7\B7';
+}
+
+.products-load:hover {
+  cursor: pointer;
+  color: orangered;
+}
+
+.helper {
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}

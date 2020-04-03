@@ -1,0 +1,17 @@
+<div>
+  <form class="form-signin" (ngSubmit)="login(formElement)" #formElement="ngForm">
+    <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="inputUsername" class="sr-only">Username</label>
+    <input type="text" id="inputUsername" class="form-control" placeholder="Username" ngModel name="username" required autofocus #username="ngModel">
+    <span class="help-block" *ngIf="!username.valid && username.touched">Username is required.</span>
+    <label for="inputPassword" class="sr-only">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" ngModel name="password" required #password="ngModel">
+    <span class="help-block" *ngIf="!password.valid && password.touched">Password is required.</span>
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
+      </label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!formElement.valid">Sign in</button>
+  </form>
+</div>

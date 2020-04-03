@@ -1,0 +1,21 @@
+
+.size {
+  background: #fff;
+  padding: 40px;
+  margin-bottom: 30px;
+}
+.title {
+  color: darkorange;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.size-form-control {
+  margin-bottom: 10px;
+}
+
+.size-item {
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
